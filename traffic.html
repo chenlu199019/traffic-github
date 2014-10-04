@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&libraries=places">
+		var map;
+		var directionsDisplay;
+		var userPos;
+		var userMarker;
+		var safeRegion;
+		var change;
+		var autocomplete;
+		var right_para1;
+		var right_para2;
+		var controlText ;
+		var count;
+	</script>  
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<!--script type="text/javascript" src="javaScript/jquery-1.10.2.min.js"></script-->
+	<script type="text/javascript" src="javaScript/angular.min.js"></script>
+	<script type="text/javascript" src="javaScript/map.js"></script>
+	<title>Traffic-pt</title>
+</head>
+
+<body>
+	<div style='position:absolute;width:100%;height:100%;'>
+		<img src="image/background2.bmp" height:"100%" width='100%' style="margin-top:0px;z-index:-10;opacity:0.7"/>
+		
+		<div id="header">
+			<div id="title">ABC</div>
+		</div>
+
+
+
+
+		<div id="pagecontainer">
+
+			
+			<div id="sidebar">
+				<form name="inputform" id="inputform" action="javascript{process()}">
+					<div id="picture1">
+						<img src="image/pic1.jpg" height="50px" style="vertical-align: left"/>
+					</div>
+					<div id="userinput">
+						<input style="display: none" name="hidepoint" id="hidepoint">
+						<div class="location">
+								<div align="center">
+									<input type="text" style="display:none;" id="start" name="start" maxlength="2048">
+									<input type="text" style="width:214px;height:22px";name="starttext" id="starttext"; maxlength="2048" value="Starting Place" onfocus="javascript: if(this.value=="Starting Place")this.value='';">
+								</div>
+								<script type="text/javascript">
+								var autocompletestart = new AutoComplete('starttext','autostart');
+								</script>
+						</div>
+						<!-- end of start input-->
+						<div class="location">
+							<div align="center">
+									<input type="text" style="display:none;" id="end" name="start" maxlength="2048">
+									<input type="text" style="width:214px;height:22px";name="endtext" id="endtext"; maxlength="2048" value="Ending Place" onfocus="javascript: if(this.value=="Ending Place")this.value='';">
+								</div>
+								<script type="text/javascript">
+								var autocompleteend = new AutoComplete('endtext','autoend');
+								</script>
+						</div>
+					</div>
+					<!--end of end input-->
+					
+
+				</form>
+			</div>
+			<div id="mapdisplay">
+			<div id="map_canvas"></div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</body>
+</html>

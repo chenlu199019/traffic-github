@@ -1,0 +1,56 @@
+body{
+	font:12px Helvetica;
+	margin:0px;
+	text-align: center;
+	padding: 0;
+}
+
+
+#header{
+	position:absolute;
+	top:15px;
+	width:98%;
+	height:50px;
+	margin-left: 15px;
+	margin-right: 20px;
+	background-color: transparent;
+	z-index: 1;
+}
+
+#title{
+	text-align: left !important;
+}
+
+#pagecontainer{
+	position:absolute;
+	top: 70px;
+	bottom:10px;
+	margin-left:15px;
+	margin-right:20px;
+	width:98%;
+	height:90%;
+	background-color: white;
+	z-index:1;
+}
+
+
+
+#sidebar{
+	position: absolute;
+	top:10px;
+	bottom:0px;
+	margin-left:5px;
+	margin-right:0px;
+	width:28%;
+	height:98%;
+	background-color: #4b89d0;
+	opacity:.2 ;
+	z-index:1;
+}
+
+#picture1{
+	position: absolute;
+	top:1px;
+	left:2px;
+	z-index: 2;
+}
